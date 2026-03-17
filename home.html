@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8" />
+<title>ONE - Personal Resume</title>
+
+<!-- CSS -->
+<link href="{% static 'resumesite/css/styles.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'resumesite/css/prettyPhoto.css' %}" rel="stylesheet" type="text/css">
+
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="{% static 'resumesite/js/jquery.prettyPhoto.js' %}"></script>
+<script src="{% static 'resumesite/js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+<div id="header">
+    <div id="logo">
+        <a href="#"><img src="{% static 'resumesite/images/logo.png' %}" alt="Logo"></a>
+    </div>
+    <ul id="main-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#connect">Connect</a></li>
+    </ul>
+</div>
+
+<div id="container">
+
+<!-- About Section -->
+<div id="about">
+    <h1>About</h1>
+    <ul id="top-social">
+        <li>
+            <a href="https://www.facebook.com/share/1CMvmoa6m8" target="_blank">
+                <img src="{% static 'resumesite/images/sm-facebook-icon.png' %}" alt="Facebook" width="40">
+            </a>
+        </li>
+           <li> <a href="https://github.com/jerryteves444-stack" target="_blank">
+                <img src="{% static 'resumesite/images/sm-github-icon.png' %}" alt="GitHub Icon" width="40">
+            </a>
+        </li>
+                       <li>
+            <a href="https://www.linkedin.com/in/Teves Jerry Jr Guillermo" target="_blank">
+                <img src="{% static 'resumesite/images/sm-linkedin-icon.png' %}" alt="LinkedIn Icon" width="40">
+            </a>
+        </li>
+
+    </ul>
+    <div class="top-divider"></div>
+    <div class="content">
+        <img src="{% static 'resumesite/images/designer-photo.png' %}" alt="Designer Photo">
+        <h2>Hi, I’m JERRY JR G TEVES</h2>
+        <br></br>
+        <h2>
+            A 3rd-year Bachelor of Science in Computer Science student and an aspiring programmer.
+            I have a strong passion for problem-solving and analytical thinking, and I enjoy tackling challenges
+            that help me grow as a developer. My goal is to continuously improve my skills and work towards
+            becoming successful in the tech industry, creating meaningful and impactful solutions along the way.
+        </h2>
+        <ul id="service-icons">
+            <li class="services-design">Design</li>
+            <li class="services-mobile">Mobile</li>
+            <li class="services-film">Film</li>
+            <li class="services-photo">Photo</li>
+        </ul>
+    </div>
+    <div class="bottom-divider"></div>
+</div>
+
+<!-- Experience Section -->
+<div id="experience">
+    <h1>Experience</h1>
+    <div class="top-divider"></div>
+    <div class="content">
+        <div class="col">
+            <h2>Online Store (C++)</h2>
+            <p>
+                This project is a simple online store system developed using C++.
+                It allows users to view products, check prices, and simulate purchasing items through a console-based interface.
+            </p>
+        </div>
+        <div class="col col-mid">
+            <h2>Networking</h2>
+            <p>
+                I have a basic understanding of computer networking, including how devices communicate over networks.
+                I am familiar with concepts such as IP addressing, network configuration, and troubleshooting connectivity issues.
+            </p>
+        </div>
+        <div class="col">
+            <h2>Arduino Uno Project</h2>
+            <p>
+                This project uses the Arduino Uno to create a simple embedded system interacting with LEDs and sensors.
+                It demonstrates my understanding of basic electronics, circuit design, and microcontroller programming.
+            </p>
+        </div>
+    </div>
+    <div class="bottom-divider"></div>
+</div>
+
+<!-- Work Section -->
+<div id="work">
+    <h1>Work</h1>
+    <div class="top-divider"></div>
+    <div class="content">
+        <ul id="work-thumbs">
+            <li>
+                <a href="{% static 'resumesite/images/work/work-full1.jpg' %}" rel="prettyPhoto[1]">
+                    <img src="{% static 'resumesite/images/work/work-thumb1.png' %}" alt="Work 1">
+                </a>
+            </li>
+            <li>
+                <a href="{% static 'resumesite/images/work/work-full2.jpg' %}" rel="prettyPhoto[1]">
+                    <img src="{% static 'resumesite/images/work/work-thumb2.png' %}" alt="Work 2">
+                </a>
+            </li>
+            <li>
+                <a href="{% static 'resumesite/images/work/work-full3.jpg' %}" rel="prettyPhoto[1]">
+                    <img src="{% static 'resumesite/images/work/work-thumb3.png' %}" alt="Work 3">
+                </a>
+            </li>
+            <!-- Add more work items here -->
+        </ul>
+    </div>
+    <div class="bottom-divider"></div>
+</div>
+
+<!-- Connect Section -->
+<div id="connect">
+    <h1>Connect</h1>
+    <div class="top-divider"></div>
+    <div class="content">
+        <div id="form">
+            <form action="#">
+                <span>Name</span>
+                <input type="text" name="name" class="name">
+                <span>Email</span>
+                <input type="text" name="email" class="email">
+                <span>Message</span>
+                <textarea class="message"></textarea>
+                <input type="submit" name="submit" value="Submit" class="submit">
+            </form>
+        </div>
+        <div id="social-footer">
+            <h2>Contact Me:</h2>
+            <p>jerryteves444@gmail.com</p>
+            <p>boyakzzz15@gmail.com</p>
+            <p>09765114042</p>
+
+            <ul id="sm-links">
+             <li>
+            <a href="https://www.facebook.com/share/1CMvmoa6m8" target="_blank">
+                <img src="{% static 'resumesite/images/sm-facebook-icon.png' %}" alt="Facebook" width="40">
+            </a>
+        </li>
+           <li> <a href="https://github.com/yourusername" target="_blank">
+                <img src="{% static 'resumesite/images/sm-github-icon.png' %}" alt="GitHub Icon" width="40">
+            </a>
+        </li>
+                       <li>
+            <a href="https://www.linkedin.com/in/Teves Jerry Jr Guillermo" target="_blank">
+                <img src="{% static 'resumesite/images/sm-linkedin-icon.png' %}" alt="LinkedIn Icon" width="40">
+            </a>
+        </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- JavaScript -->
+<script>
+$(function() {
+    $('#main-menu li a').click(function(event){
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500,'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+$(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false, deeplinking: false});
+});
+</script>
+
+</body>
+</html>
